@@ -174,7 +174,7 @@ handleOnSelectedRowsChanged(args) {
           [columnDefinitions]="columnDefinitions"
           [gridOptions]="gridOptions"
           [dataset]="dataset"
-          (onGridStateServiceChanged)="handleOngridStateChanged($event.detail.args)">
+          (onGridStateChanged)="handleOngridStateChanged($event.detail.args)">
 </angular-slickgrid>
 ```
 ```ts

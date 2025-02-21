@@ -145,18 +145,18 @@ export class GridDemoComponent {
 
 ### Grid State Event
 There are 2 ways of subscribing to GridState Service event changed.
-1. Through `(onGridStateServiceChanged)` Event Emitter (recommended)
+1. Through `(onGridStateChanged)` Event Emitter (recommended)
 2. Through `onGridStateChanged` Observable on the GridState Service.
 
 Examples
-#### 1. `(onGridStateServiceChanged)` Event Emitter (recommended)
+#### 1. `(onGridStateChanged)` Event Emitter (recommended)
 ##### View
 ```html
 <angular-slickgrid gridId="grid1"
          [columnDefinitions]="columnDefinitions"
          [gridOptions]="gridOptions"
          [dataset]="dataset"
-         (onGridStateServiceChanged)="gridStateChanged($event)">
+         (onGridStateChanged)="gridStateChanged($event)">
 </angular-slickgrid>
 ```
 ##### Component
